@@ -1,0 +1,309 @@
+/* COLOR PALETTE
+Light Blue  #B4D9D5
+Yellow      #E5BE01
+Orange      #F27405
+White       #FFFFFF
+Gray        #4D4D4D
+*/
+
+/* Fonts
+font-family: "modern-love", sans-serif;
+font-weight: 400;
+font-style: normal;
+
+font-family: "modern-love-caps", sans-serif;
+font-weight: 300;
+font-style: normal;
+
+font-family: "pt-sans-narrow", sans-serif;
+font-weight: 400;
+font-style: normal;
+
+font-family: "pt-sans-narrow", sans-serif;
+font-weight: 700;
+font-style: normal;
+*/
+header {
+    background-color: #B4D9D5;
+    padding: 20px;
+}
+p {
+  font-family: "pt-sans-narrow", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 25px;
+}
+.nav-item {
+    font-family: "pt-sans-narrow", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2em;
+}
+.nav-item a {
+    color: #F27405;
+}
+.dropdown-item {
+    font-family: "pt-sans-narrow", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.5em;
+}
+.company {
+    font-family: "modern-love", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    color: #4D4D4D;
+    font-size: 75px;
+    text-shadow: 2px 2px 5px white;
+}
+.company-second {
+    font-family: "modern-love-caps", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    text-align: center;
+    font-size: 75px;
+    color: #4D4D4D;
+    text-shadow: 2px 2px 5px white;
+}
+.company-third {
+    font-family: "modern-love-caps", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    text-align: center;
+    font-size: 50px;
+    color: #4D4D4D;
+    text-shadow: 2px 2px 5px white;
+}
+main {
+    margin: 50px;
+}
+footer {
+    background-color: #B4D9D5;
+    position: relative;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 15px;
+}
+
+/* Image Gallery */
+.heading {
+    text-align: center;
+    font-size: 2.0em;
+    letter-spacing: 1px;
+    padding: 40px;
+    font-family: "pt-sans-narrow", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 50px;
+    color: #F27405;
+    background-color: #4D4D4D;
+
+}
+.gallery-image {
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .gallery-image img {
+    height: 400px;
+    /* width: 350px; */
+    transform: scale(1.0);
+    transition: transform 0.4s ease;
+  }
+  
+  .img-box {
+    box-sizing: content-box;
+    margin: 10px;
+    height: 400px;
+     /* width: 350px; */
+    overflow: hidden;
+    display: inline-block;
+    color: white;
+    position: relative;
+    background-color: white;
+  }
+  
+  .caption {
+    position: absolute;
+    bottom: 5px;
+    left: 20px;
+    opacity: 0.0;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    color: white;
+    border-radius: 10px;
+    background-color: #4D4D4D;
+    padding: 20px;
+    width: 150px;
+    height: 75px;
+    font-family: "pt-sans-narrow", sans-serif;
+    font-size: 25px;
+    text-align: center;
+  }
+  
+  .transparent-box {
+    height: 400px;
+    /*width: 350px; */
+    background-color:rgba(0, 0, 0, 0);
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: background-color 0.3s ease;
+  }
+  
+  .img-box:hover img { 
+    transform: scale(1.1);
+  }
+  
+  .img-box:hover .transparent-box {
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  
+  .img-box:hover .caption {
+    transform: translateY(-20px);
+    opacity: 1.0;
+  }
+  
+  .img-box:hover {
+    cursor: pointer;
+  }
+  
+  .caption > p:nth-child(2) {
+    font-size: 0.8em;
+  }
+  
+  .opacity-low {
+    opacity: 0.5;
+  }
+  /* Photo Gallery */
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+  }
+  
+  /* Create four equal columns that sits next to each other */
+  .column {
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+  }
+  
+  .column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+  }
+  
+  /* Responsive layout - makes a two column-layout instead of four columns */
+  @media screen and (max-width: 992px) {
+    .column {
+      flex: 50%;
+      max-width: 50%;
+    }
+  }
+  
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 768px) {
+    .column {
+      flex: 100%;
+      max-width: 100%;
+    }
+  }
+  /* Product Card */
+  .card-body {
+    background-color: #B4D9D5;
+    font-family: "pt-sans-narrow", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+    color:#4D4D4D;
+  }
+  .card-title {
+    font-weight: 700;
+    font-size: 30px;
+    color: #F27405;
+  }
+  /* Contact Page */
+  section {
+    display: flex;
+    margin: 10px;
+  }
+  .form-container {
+    width: 50%;
+    padding-left: 15px;
+  }
+  /* Responsive layout - Contact */
+  @media screen and (max-width: 768px) {
+    .contact {
+      display: block;
+    }
+    .form-container {
+      width: 100%;
+    }
+  }
+  @media screen and (max-width: 992px) {
+    .form-container {
+      width: 100%;
+    }
+  }
+  /* About Page */
+  #headshot {
+    float: left;
+    width: 300px;
+    margin: 10px;
+  }
+  #paint {
+    float: right;
+    width: 450px;
+    margin: 10px;
+  }
+  #beach {
+    float: left;
+    width: 300px;
+    margin: 10px;
+  }
+  .welcome {
+    font-family: "modern-love", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: left;
+    color: #4D4D4D;
+    font-size: 50px;
+    margin: 25px;
+  }
+  .welcome-second {
+    font-family: "modern-love-caps", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    text-align: left;
+    font-size: 30px;
+    color: #4D4D4D;
+    margin: 25px;
+  }
+  .about {
+    display: grid;
+    font-family: "pt-sans-narrow", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 30px;
+    margin-top: 30px;
+    margin: 25px;
+  }
+  .about-para {
+    font-family: "pt-sans-narrow", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 35px;
+  }
+  .home-head {
+    font-family: "modern-love-caps", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    text-align: left;
+    font-size: 50px;
+    color: #4D4D4D;
+  }
